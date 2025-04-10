@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-var URL = "http://localhost:3000/recipe"
+var URL = "https://splendid-youtiao-73fd7b.netlify.app"
 export const createRecipe = createAsyncThunk('add/recipe', async (data) => {
     try {
         const res = await axios.post(URL, data);
